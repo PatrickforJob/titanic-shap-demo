@@ -14,4 +14,7 @@
 
 ## 資料來源
 
-[OpenML Titanic (id 40945)](https://www.openml.org/d/40945)，透過 `sklearn.datasets.fetch_openml` 下載。
+`titanic.csv` 為 [OpenML Titanic (id 40945)](https://www.openml.org/d/40945) 的原始資料，未做任何修改（OpenML 標示授權：Public）。
+原始整理者 Frank E. Harrell Jr. & Thomas Cason（Vanderbilt University），資料源自 Encyclopedia Titanica。僅供教學使用。
+
+Notebook 會優先從本 repo 讀取 `titanic.csv`；若讀取失敗，會自動改用 `sklearn.datasets.fetch_openml` 從 OpenML 下載。
